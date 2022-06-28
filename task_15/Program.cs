@@ -6,6 +6,6 @@
 // 1 -> нет
 Console.WriteLine("Введите число от 1 до 7:");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number > 7) Console.WriteLine("Error!");
+if (number > 7 || number <= 0) Console.WriteLine("Error!");
 else if (number == 6 || number == 7) Console.WriteLine("Да");
 else Console.WriteLine("Нет");
