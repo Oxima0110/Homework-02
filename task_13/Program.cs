@@ -21,16 +21,16 @@ int bitNumber = Count(number);
 
 if (bitNumber <= 2) Console.WriteLine("Третьей цифры нет");
 else if ( bitNumber == 3) Console.WriteLine($"Третья цифра числа {number} => {number%10}");
-else
-{
-    int i = 1;
-    int result = number;
-    while (i < bitNumber - 2)
-    {
-        result = result / 10;
-        i = i + 1;
-    }
-    result = result % 10;
-    Console.WriteLine($"Третья цифра числа {number} => {result}");
-}
-
+// else
+// {
+//     int i = 1;
+//     int result = number;
+//     while (i < bitNumber - 2)
+//     {
+//         result = result / 10;
+//         i = i + 1;
+//     }
+//     result = result % 10;
+//     Console.WriteLine($"Третья цифра числа {number} => {result}");
+// }
+ else Console.WriteLine($"Третья цифра числа {number} => {number / Convert.ToInt32(Math.Pow(10, bitNumber-3)) % 10}");
